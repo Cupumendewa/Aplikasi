@@ -7,4 +7,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_navigasi2">Navigasi2Activity</string>
+    <string name="title_activity_navigasi3">Navigasi3Activity</string>
+    <string name="title_activity_navigasi4">Navigasi4Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

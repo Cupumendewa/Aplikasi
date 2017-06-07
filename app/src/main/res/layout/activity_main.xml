@@ -13,7 +13,6 @@
         android:text="Navigasi 1"
         tools:layout_editor_absoluteY="92dp"
         tools:layout_editor_absoluteX="8dp"
-        android:onClick="Intent"
         android:layout_marginBottom="38dp"
         android:layout_above="@+id/navigasi2"
         android:layout_alignLeft="@+id/navigasi2"

@@ -27,6 +27,14 @@
         <activity
             android:name=".Navigasi2Activity"
             android:label="@string/title_activity_navigasi2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Navigasi3Activity"
+            android:label="@string/title_activity_navigasi3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Navigasi4Activity"
+            android:label="@string/title_activity_navigasi4"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
