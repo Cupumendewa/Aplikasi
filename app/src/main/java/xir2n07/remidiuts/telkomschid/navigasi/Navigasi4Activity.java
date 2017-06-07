@@ -3,6 +3,7 @@ package xir2n07.remidiuts.telkomschid.navigasi;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -40,6 +41,9 @@ public class Navigasi4Activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        changePage(R.id.nav_gallery);
+        navigationView.setCheckedItem(R.id.nav_gallery);
     }
 
     @Override
@@ -78,24 +82,28 @@ public class Navigasi4Activity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        changePage(id);
+        return true;
+    }
 
-        } else if (id == R.id.nav_slideshow) {
+    private void changePage(int id){
+        Fragment fragment = null;
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
+        if (id == R.id.nav_gallery) {
+            fragment = new Navi4Page1Fragment();
+            setTitle("Foto");
         } else if (id == R.id.nav_send) {
-
+            fragment = new Navi4Page2Fragment();
+            setTitle("Data Diri");
         }
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commitNow();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
