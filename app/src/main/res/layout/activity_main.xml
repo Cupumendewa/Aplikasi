@@ -13,10 +13,10 @@
         android:text="Navigasi 1"
         tools:layout_editor_absoluteY="92dp"
         tools:layout_editor_absoluteX="8dp"
-        android:layout_marginBottom="38dp"
-        android:layout_above="@+id/navigasi2"
-        android:layout_alignLeft="@+id/navigasi2"
-        android:layout_alignStart="@+id/navigasi2" />
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/navigasi3"
+        android:layout_alignStart="@+id/navigasi3" />
 
     <Button
         android:id="@+id/navigasi2"
@@ -25,10 +25,10 @@
         android:text="Navigasi 2"
         tools:layout_editor_absoluteY="231dp"
         tools:layout_editor_absoluteX="8dp"
-        android:layout_above="@+id/navigasi3"
-        android:layout_alignLeft="@+id/navigasi3"
-        android:layout_alignStart="@+id/navigasi3"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/navigasi1"
+        android:layout_alignLeft="@+id/navigasi1"
+        android:layout_alignStart="@+id/navigasi1" />
 
     <Button
         android:id="@+id/navigasi3"
@@ -37,10 +37,10 @@
         android:text="Navigasi 3"
         tools:layout_editor_absoluteY="162dp"
         tools:layout_editor_absoluteX="8dp"
-        android:layout_above="@+id/navigasi4"
+        android:layout_below="@+id/navigasi2"
         android:layout_alignLeft="@+id/navigasi4"
         android:layout_alignStart="@+id/navigasi4"
-        android:layout_marginBottom="39dp" />
+        android:layout_marginTop="24dp" />
 
     <Button
         android:id="@+id/navigasi4"
@@ -49,9 +49,9 @@
         android:text="Navigasi 4"
         tools:layout_editor_absoluteY="298dp"
         tools:layout_editor_absoluteX="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="145dp" />
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/navigasi3"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
